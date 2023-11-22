@@ -1,0 +1,13 @@
+n=int(input())
+l=list(map(int,input().split()))
+even=[]
+odd=[]
+for i in l:
+    if i%2==0:
+        odd.append(i)
+    else:
+        even.append(i)
+res=odd+even#mergining two list
+#n.extend(p)
+for i in res:
+    print(i,end=' ')
